@@ -60,6 +60,8 @@
   	@media (width <= 1300px) {
       nav {
         width: 100dvw;
+        position: sticky;
+        top: 0;
       }
 
       .nav_button {
