@@ -88,7 +88,7 @@
         //const texture = new THREE.TextureLoader().load(sky);
 
         //setup three.js scene, camera and renderer
-        const lava_lamp_scene = document.getElementById('lava_lamp_container');
+        const lava_lamp_scene = document.getElementById('space_container');
         const ll_scene_width: number = lava_lamp_scene?.offsetWidth ?? 0;
         const ll_scene_height: number = lava_lamp_scene?.offsetHeight ?? 0;
         const scene = new THREE.Scene();
@@ -214,7 +214,7 @@
         //camera positioning
         camera.position.z = 120;
         const controls = new OrbitControls( camera, renderer.domElement );
-        camera.position.set( 0, 20, 100 );
+        camera.position.set( 0, 20, 150 );
         controls.update();
 
         //default threejs function for drawing and updating objects on the screen
@@ -365,17 +365,17 @@ const homelab_tech = [
 </script>
 
 <div class="content_container">
-	<div id="lava_lamp_container">
+	<div id="space_container">
         
 	</div>
 	<div class="content_container_child space_grotesk_norm" id="intro_section">
 		<p class="content_text">
-			Hey, I'm Adam. Sometimes referred to as hamburger.
+			Hey, I'm Adam. Also known as hamburger or burg.
             <br/><br/>
-            Here you can find a list of technologies I am working with and things I am using to push my learning foward.
-            I try to keep this site as up to date as possible but sometimes I am too busy with other things as most of you could understand.
+            This is a place you can find a list of technologies I am working with professionally and to push my learning foward.
+            I try to keep this site as up to date with current information as well as add new functionality.
             <br/><br/>
-            Currently, I am very interested in how graphics are rendered to a screen whether that is on the web or on a deskop. Right now I am choosing to spend my time mainly on learning WebGL and three.js but have plans to dive deeper into OpenGL and pickup some skills using C++.
+            Recently I have been learning how 2D and 3D graphics are rendered to a screen primarly on the web. Right now I am choosing to spend my free time mainly on learning WebGL and three.js implementations but have plans to dive deeper into OpenGL and pickup some lower level skills using C++.
 		</p>
 	</div>
     <div class="content_container_child space_grotesk_norm" id="tech_display_icons">
@@ -482,7 +482,7 @@ const homelab_tech = [
         }
 	}
 
-    #lava_lamp_container {
+    #space_container {
         width: 100vw;
         height: 100vh;
         background: #120318;
@@ -550,6 +550,10 @@ const homelab_tech = [
 
         .technology_badge span {
             padding: 5px 5px;
+        }
+
+        #tech_display_icons {
+             justify-content: center;
         }
 
     }
