@@ -267,17 +267,17 @@
        width: "100px"
     },
     {
+       name: "lua",
+       icon: lua_logo,
+       height: "100px",
+       width: "100px"
+    },
+    {
        name: "python",
        icon: python_logo,
        height: "100px",
        width: "100px"
     },
-    {
-       name: "lua",
-       icon: lua_logo,
-       height: "100px",
-       width: "100px"
-    }
 ]
 
 const homelab_tech = [
@@ -364,12 +364,16 @@ const homelab_tech = [
 
 </script>
 
-<div class="content_container">
+<div class="content_container" id="home">
+
 	<div id="space_container">
+        <div class="space_editor">
+        
+        </div>
         
 	</div>
 	<div class="content_container_child space_grotesk_norm" id="intro_section">
-		<p class="content_text">
+		<p class="content_text" id="home_content">
 			Hey, I'm Adam. Also known as hamburger or burg.
             <br/><br/>
             This is a place you can find a list of technologies I am working with professionally and to push my learning foward.
@@ -486,6 +490,7 @@ const homelab_tech = [
         width: 100vw;
         height: 100vh;
         background: #120318;
+        position: inherit;
     }
 
     .technology_badge {

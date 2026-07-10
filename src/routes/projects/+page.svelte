@@ -6,7 +6,7 @@
             width: "25vw",
             height: "25vh",
             technologies: ["vue","threejs", "pinia", "typescript", "expressjs"],
-            description: "A web app for translating NASA's sonification audio files and bring them to live with three js with interactivity of the cosmos that react to audio frequency data.",
+            description: "A web app for translating NASA's sonification audio files and bring them to life with three js with interactivity of the cosmos that react to audio frequency data.",
             status: "in progress",
             repo_link: "https://github.com/adamkasten/space_sonification"
         },
