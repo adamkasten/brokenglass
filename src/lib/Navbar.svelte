@@ -11,7 +11,7 @@
     const content = document.getElementById("home_content");
     content?.scrollIntoView({
       behavior: "smooth",
-      block: "center",
+      block: "start",
     });
   }
 

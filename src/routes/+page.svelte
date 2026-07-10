@@ -502,6 +502,10 @@ const homelab_tech = [
         width: 200px;
     }
 
+    #home_content {
+        scroll-margin-top: 200px;
+    }
+
     .technology_badge span {
         text-transform: uppercase;
         font-weight: 600;
